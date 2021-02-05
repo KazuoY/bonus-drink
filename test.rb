@@ -1,3 +1,5 @@
 require './bonus_drink'
 
-p BonusDrink.total_count_for(100)
+File.open("answer.txt", mode = "w"){|f|
+  f.write(BonusDrink.total_count_for(100))
+}
